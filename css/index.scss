@@ -182,6 +182,13 @@ footer{
     }
 }
 
+@media only screen and (min-width: 1441px) {
+    #section2{
+        #img {
+            height: 80vh;
+        }
+    }
+}
 
 @media only screen and (max-width: 1440px) {
 
