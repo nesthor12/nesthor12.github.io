@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Inter&family=Source+Code+Pro');
+
+html,
+body {
+  font-size: 18px;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  background-color: #f7f1e2;
+}
+
+body, #section2 p {
+    font-family: 'Inter', sans-serif
+}
+
+h1, h2, h3{
+    font-family: 'Staatliches', cursive;
+}
+
+h6,footer #copyright{
+    font-family: 'Source Code Pro';
+}
+
+nav li a{
+    color : #ffffff !important;
+}
+
+h1{
+    color : #f7f1e2;
+}
+ 
+footer li, #copyright{
+    color: #e1dad0
+}
+
+h2,h3,h6{
+    color: #d9664c;
+}
+
+
+h1{
+    font-size: 76px;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 1em;
+}
+
+h3 {
+    font-size: 27px;
+    font-weight: initial;
+}
+
+
+#headers .row{
+    height: 100vh;
+}
+
+#section2{
+    height: 90vh;
+
+    .row{
+        height: 90vh;
+    }
+    #img{
+        height: 50vh;
+    }
+
+    #caption p{
+        line-height: 2em;
+    }
+
+}
+
+#navlist{
+    justify-content : space-between
+}
+
+#navdiv{
+    z-index: 1;
+    position: absolute !important;
+    width: 100%;
+
+    li{
+        padding: 20px;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+.header1{
+    background-image: url("../assets/imgs/banner1.jpg");
+}
+.header2{
+    background-image: url("../assets/imgs/banner2.jpg");
+    background-position: right center;
+}
+.header3{
+    background-image: url("../assets/imgs/banner3.jpg");
+}
+
+.dim{
+    background: rgba(0, 0, 0, 0.3)
+}
+
+#headers{
+
+    .bgbanner{
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+#section2{
+    #img {
+        background-image: url("../assets/icons/branchout-badge.svg"), url("../assets/imgs/gallery2.jpg"), url("../assets/imgs/gallery1.jpg");
+        background-position: top right, left center, center bottom;
+        background-repeat: no-repeat,no-repeat, no-repeat;
+        background-size: 10em, 85%, 85%;
+        background-clip: border-box, border-box, border-box;
+    }
+}
+
+#icons{
+    img {
+       width: 50px;
+    }
+    img{
+        padding-bottom: 20px;
+    }
+    padding-top: 20px;
+    padding-bottom: 15vh;
+}
+
+#slide{
+    #carousel{
+        padding: 0;
+        padding-top: 5vh;
+
+        .carousel-item {
+            height: 100%;
+        }
+    }
+    h6 {
+  
+        text-decoration: underline;
+        letter-spacing: 1px;
+        text-underline-offset: 10px;
+    }
+}
+
+
+#lastsection{
+
+    background-image: url("../assets/icons/branchout-badge.svg"), url("../assets/icons/branchout-jaggeddivider.svg");
+    background-position: 102% -20%, center 105%;
+    background-repeat: no-repeat,no-repeat;
+    background-size: 20em, 100%;
+    background-clip: border-box, border-box;
+    background-color: #f7f1e2;
+
+    .row{
+        height: 55vh;
+    }
+}
+
+footer{
+    background-color: #000;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    li{
+        text-decoration: none;
+        list-style-type: none;
+        line-height: 2em;
+    }
+    img{
+        width: 5em;
+    }
+}
+
+
+@media only screen and (max-width: 1440px) {
+
+    body {
+        font-size: 15px;
+    }
+    h1 {
+      font-size: 55px;
+    }
+    h2 {
+      font-size: 45px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+
+    h6{
+        font-size: 12px
+    }
+
+    #section2{
+        height: 80vh;
+    
+        .row{
+            height:80vh;
+        }
+
+        #img {
+            background-position: top right, left center, center bottom;
+            background-size: 12em, 75%, 75%;
+            height: 60vh;
+        }        
+    }
+
+    #icons{
+        img {
+            width: 40px;
+            padding-bottom: 10px;
+        }
+    }
+
+    footer {
+        padding-top: 5vh;
+
+        li {
+            font-size: 12px;
+        }
+
+        #copyright {
+            font-size: 10px;
+        }
+    } 
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 13px;
+    }
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 35px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+
+    h6{
+        font-size: 8px
+    }
+
+    #section2{
+        height: 80vh;
+    
+        .row{
+            height: 80vh;
+        }
+
+        #img{
+            height: 40vh;
+        }
+    }
+
+    #icons{
+        img {
+           width: 30px;
+        }
+        img{
+            padding-bottom: 10px;
+        }
+        padding-top: 10px;
+        padding-bottom: 10vh;
+    }
+
+    footer {
+        padding-top: 5vh;
+
+        li {
+            font-size: 12px;
+        }
+
+        #copyright {
+            font-size: 10px;
+        }
+    } 
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        font-size: 13px;
+    }
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+    h3 {
+      font-size: 13px;
+    }
+
+    h6{
+        font-size: 5px
+    }
+
+    #navdiv{
+        .nav-item{
+            padding-left : 10px;
+            padding-right : 10px;
+        }
+    }
+
+    #section2{
+        height: 60vh;
+    
+        .row{
+            height: 60vh;
+        }
+
+        #img {
+            background-position: top right, left center, center bottom;
+            background-size: 10em, 90%, 90%;
+            height: 45vh;
+        }
+        #caption p{
+            line-height: 1.5em;
+        }
+    
+    }
+
+    #icons{
+        img {
+           width: 30px;
+        }
+        img{
+            padding-bottom: 10px;
+        }
+        padding-top: 20px;
+        padding-bottom: 10vh;
+    }
+
+    #slide{
+        #carousel{
+            padding: 0;
+            padding-top: 5vh;
+    
+            .carousel-item {
+                height: 50vh;
+            }
+        }
+        h6 {
+      
+            text-decoration: underline;
+            letter-spacing: 1px;
+            text-underline-offset: 10px;
+        }
+    }
+    
+
+    #lastsection{
+        background-position: 102% -30%, center 105%;
+        background-size: 20em, 100%;
+    
+        .row{
+            height: 45vh;
+        }
+    }
+
+    footer {
+        padding-top: 5vh;
+
+        li {
+            font-size: 10px;
+        }
+
+        #copyright {
+            font-size: 9px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+      font-size: 35px;
+    }
+
+    h6{
+        font-size: 12px
+    }
+
+    #navdiv {
+        padding-top: 30px;
+        padding-left: 20px;
+
+        button{
+            padding-left: 0px; 
+            color: #ffffff;
+            display: inline-flex;
+        }
+
+        .icons{
+            ul{
+                display: inline-flex;
+                margin-top: revert;
+                margin-bottom: revert;
+                padding-left: .5rem;
+
+                li{
+                    color: #fff;
+                    list-style-type: none;
+                    padding-left: 15px;
+                    font-size : 20px;
+                }
+            }
+        }
+
+        li{
+            padding: 0;
+        }
+        .navbar-toggler{
+            border-color: rgba(255,255,255,.0);
+            color: rgba(255,255,255,1);
+            font-family: 'Staatliches', cursive;
+            
+        }
+        .navbar-toggler:focus {
+            box-shadow: 0 0 0 0rem;
+        }
+
+        .brand {
+            .nav-link{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+        nav{
+            .container-fluid{
+                width: 100%;
+                display: block !important;
+            }
+        }
+    }
+
+    #mheaders{
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 10vh;
+
+        #headerCarousel{
+            .carousel-item {
+                height: 100vh;
+                background-position: center;
+                background-size: 500%;
+                background-repeat: no-repeat;
+                .dim{
+                    height: 100vh;
+                }
+                .carousel-caption{
+                    padding-top: 50vh;
+                    bottom: auto;
+                }
+            }
+
+            .header1{
+                background-size: 200%;
+            }
+            .header2{
+                background-size: 300%;
+            }
+        }       
+    }
+
+    #section2{
+        height:80vh;
+    
+
+        #img {
+            background-position: top right, left center, center bottom;
+            background-size: 10em, 80%, 80%;
+            height: 40vh;
+        }
+    }
+
+    #icons{
+        padding-bottom: 5vh;
+    }
+
+    #slide{
+        #carousel{
+            .carousel-item {
+                height: 100%;
+                img{
+                    height: auto;
+                }
+            }
+        }
+        h6 {
+            padding-bottom: 10px;
+            text-underline-offset: 5px;
+        }
+    }
+    
+
+    #lastsection{
+        background-position: 140% -50%, center 102%;
+        background-size: 20em, 200%;
+
+        height: 50vh;
+    
+        .row{
+            height: 50vh;
+        }
+        h2{
+            line-height: 1.1em;
+        }
+        p{
+            line-height: 1.5em;
+            font-size: 15px;
+        }
+    }
+
+    footer {
+
+        .row div{
+            padding-bottom : 15px;
+        }
+
+        padding-top: 5vh;
+
+        li {
+            font-size: 12px;
+        }
+
+        #copyright {
+            div{
+                padding-bottom : 0px;
+            }
+            font-size: 8px;
+            padding-bottom : 0px;
+        }
+
+        img{
+            width: 7em;
+        }
+    }
+}
